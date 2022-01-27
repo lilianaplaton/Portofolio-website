@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Personal website - Liliana Platon
+    </title>
+
+    <!--MULTISCROLL CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.min.css" />
+
+    <!--CUSTOM STYLE-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--HTML HERE-->
+    <!--header-->
+    <div class="header">
+        <div class="logo">
+            <img src="poze/logo.png">
+        </div>
+    </div>
+
+    <!--CONTENT-->
+    <div id="multiscroll">
+        <div class="ms-left">
+
+            <!--HOME SECTION LEFT-->
+            <div class="ms-section">
+                <h1>PLATON </h1>
+                <h2>LILIANA</h2>
+                <h5>One area that I’m passionate about
+                    <br>is self-development and self-
+                    <br> improvement in my personal life.</h5>
+            </div>
+
+            <!--ABOUT SECTION LEFT-->
+            <div class="ms-section">
+                <div class="about-section">
+                    <h1>DESPRE MINE</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <br> dolores esse, quaerat officia, minus impedit mollitia.
+                        <br>Saepe, vero ipsa cum nobis ipsam ratione quae hic.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <br> dolores esse, quaerat officia, minus impedit mollitia.
+                        <br>Saepe, vero ipsa cum nobis ipsam ratione quae hic.</p>
+
+                </div>
+            </div>
+            <!--SERVICII SECTION LEFT-->
+
+            <div class="ms-section">
+                <div class="services-section">
+                    <h1>SERVICII</h1>
+                    <h3>Branding</h3>
+                    <h3>Front-End Developer</h3>
+                    <h3>Web design</h3>
+                    <h3>Photoshop editor</h3>
+                    <h3>UX|UI Design</h3>
+                </div>
+            </div>
+
+            <!--CONTACT SECTION LEFT-->
+            <div class="ms-section">
+                <h1>CONTACT</h1>
+                <form class="form">
+                    <input class="textField" type="text" placeholder="Nume">
+                    <input class="textField" type="text" placeholder="Email">
+                    <textarea class="textField textarea" placeholder="Mesaj"></textarea>
+                    <input class="textField btn" type="submit" value="Trimite mesaj" name="">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="ms-right">
+
+            <!--HOME IMAGE RIGHT-->
+            <div class="ms-section">
+                <img src="poze/1home.png">
+            </div>
+
+            <!-- DESPRE MINE IMAGE RIGHT-->
+            <div class="ms-section">
+                <img src="poze/2despre mine.png">
+            </div>
+
+            <!--SERVICII IMAGE RIGHT-->
+            <div class="ms-section">
+                <img src="poze/3servicii.png">
+            </div>
+
+            <!--CONTACT IMAGE RIGHT-->
+            <div class="ms-section">
+                <img src="poze/4contact.png">
+            </div>
+        </div>
+    </div>
+
+
+    <!--JQUERY CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!--JQUERY EASING-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!--JQUERY MULTISCROLL-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.min.js"></script>
+
+    <script type="text/javascript">
+        //js code here
+        $(function() {
+            $("#multiscroll").multiscroll({
+                easing: 'easeInOutExpo',
+                anchors: ['Home', 'Despre mine', 'Servicii', 'Contact'],
+                navigation: true,
+                navigationTooltips: ['Home', 'Despre mine', 'Servicii', 'Contact']
+            });
+        });
+    </script>
+
+    <!--music here-->
+    <iframe src="audio.mp3" allow="autoplay" style="display: none" id="iframeAudio"></iframe>
+</body>
+
+</html>

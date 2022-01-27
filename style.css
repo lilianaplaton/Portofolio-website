@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: Open sans, sans-serif;
+}
+
+
+/*DEFAULT STYLE*/
+
+.ms-left .ms-section {
+    background-color: rgb(220, 220, 220);
+    padding-right: 25px;
+}
+
+.ms-right .ms-section {
+    background-color: #231e18;
+}
+
+#multiscroll-nav li .active span {
+    background-color: rgb(238, 255, 4);
+}
+
+#multiscroll-nav span {
+    border-color: rgb(235, 252, 3);
+    ;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #78787842;
+    color: #000;
+    padding: 0 60px;
+    line-height: 50px;
+    z-index: 99;
+}
+
+.logo {
+    float: left;
+}
+
+.menu span {
+    width: 30px;
+    height: 1px;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+}
+
+.menu span:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 25px;
+    height: 1px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 88px;
+    font-weight: 900;
+    text-align: right;
+    line-height: 88px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #fffb00;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 80px;
+    text-transform: uppercase;
+    position: middle;
+    letter-spacing: 5px;
+}
+
+h5 {
+    font-size: 16px;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #cecece;
+    padding: 2px 10px;
+    display: inline-flex;
+    color: #333;
+    float: right;
+}
+
+
+/*about-section style*/
+
+.about-section {
+    padding: 0 25px 0 100px;
+    text-align: right;
+}
+
+.about-section h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+
+/*servicii section style*/
+
+.service-section h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.services-section h3 {
+    display: inline-flex;
+    color: #130708;
+    padding: 10px 25px;
+    float: right;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 22px;
+    background-color: #b9b9b9;
+    clear: both;
+}
+
+.services-section h3:hover {
+    background-color: #231e18;
+    color: rgb(225, 250, 3);
+    cursor: default;
+}
+
+
+/*contact section style*/
+
+.form {
+    width: 60%;
+    float: right;
+    margin: 45px 0;
+}
+
+.textField {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #080903;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: all ease 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textarea {
+    max-width: 100%;
+    min-height: 120px;
+}
+
+.btn {
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(248, 252, 4);
+}
